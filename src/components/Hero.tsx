@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -18,10 +19,14 @@ export default function Hero() {
     >
       <div className="absolute inset-0">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/hero-interior.png"
             alt="Japanese Minimalist Smart Home"
-            className="w-full h-full object-cover opacity-60"
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            className="object-cover opacity-60"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-[#2a2520]/80 via-[#1e1e1e]/80 to-[#1a1a2a]/90" />
@@ -61,7 +66,7 @@ export default function Hero() {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          Technology for a quieter life.
+          静かな暮らしのためのテクノロジー。
         </p>
         <p
           className={`mt-8 max-w-2xl mx-auto text-sm sm:text-base text-warm-white/40 leading-relaxed transition-all duration-1000 delay-500 ${

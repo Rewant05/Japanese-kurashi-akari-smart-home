@@ -8,7 +8,7 @@ export default function ArchitectureSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] text-amber uppercase mb-3">
-            Philosophy
+            理念
           </p>
           <h2 className="font-serif-jp text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal">
             伝統と未来の融合
@@ -28,7 +28,7 @@ export default function ArchitectureSection() {
                   伝統的な暮らし
                 </p>
                 <h3 className="font-serif-jp text-2xl sm:text-3xl font-medium text-charcoal mb-4">
-                  Traditional Japanese Living
+                  日本の伝統的な暮らし
                 </h3>
                 <p className="text-sm text-ink-light/70 leading-relaxed max-w-md">
                   障子の柔らかな光、縁側から感じる季節の移ろい、天然木の温もり。
@@ -90,7 +90,7 @@ export default function ArchitectureSection() {
                   未来の暮らし
                 </p>
                 <h3 className="font-serif-jp text-2xl sm:text-3xl font-medium text-warm-white mb-4">
-                  Connected Living
+                  つながる暮らし
                 </h3>
                 <p className="text-sm text-warm-white/50 leading-relaxed max-w-md">
                   センサー、AI、自動制御が静かに連携し、住む人の快適さを見えないところで最適化します。

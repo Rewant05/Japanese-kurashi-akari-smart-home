@@ -30,7 +30,7 @@ export default function AboutPage() {
       <PageHeader
         title="会社概要"
         subtitle="日本の暮らしに、静かなテクノロジーを。"
-        tagline="About Us"
+        tagline="私たちについて"
       />
 
       <section className="py-16 lg:py-24">

@@ -5,7 +5,7 @@ import ScrollReveal from "./ScrollReveal";
 const features = [
   {
     id: "lighting",
-    tagline: "Smart Lighting",
+    tagline: "スマート照明",
     title: "光を、時間に合わせて。",
     description:
       "朝は自然光のように穏やかに目覚め、昼は集中力を高める白色光、夕方はリラックスできる暖色へ。暮らし灯のアダプティブ照明は、一日のリズムに合わせて自動で調整されます。",
@@ -26,7 +26,7 @@ const features = [
   },
   {
     id: "climate",
-    tagline: "Climate Control",
+    tagline: "空調制御",
     title: "空気まで、心地よく。",
     description:
       "温度、湿度、空気質をリアルタイムでモニタリング。季節や天候、在室状況に応じて、最も快適な空間を自動で維持します。PM2.5やCO2濃度も常に最適レベルに。",
@@ -45,7 +45,7 @@ const features = [
   },
   {
     id: "security",
-    tagline: "Security",
+    tagline: "セキュリティ",
     title: "見えない安心を。",
     description:
       "スマートロック、モーションセンサー、窓開閉センサーが連携し、24時間家族を守ります。外出中もスマートフォンからリアルタイムに状況を確認できます。",
@@ -66,7 +66,7 @@ const features = [
   },
   {
     id: "energy",
-    tagline: "Energy",
+    tagline: "エネルギー",
     title: "使う電気を、知る。",
     description:
       "各部屋・各デバイスの電力消費をリアルタイムで可視化。使用パターンを学習し、無駄なエネルギー消費を自動で削減。月間レポートで節約効果を実感できます。",
@@ -91,7 +91,7 @@ export default function FeatureSections() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center mb-16 lg:mb-20">
           <p className="text-xs tracking-[0.3em] text-amber uppercase mb-3">
-            Features
+            特徴
           </p>
           <h2 className="font-serif-jp text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal">
             暮らしを支えるテクノロジー

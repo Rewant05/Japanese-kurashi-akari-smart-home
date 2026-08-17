@@ -81,7 +81,7 @@ export default function FaqPage() {
       <PageHeader
         title="よくある質問"
         subtitle="暮らし灯の製品・サービスに関するよくある質問。"
-        tagline="FAQ"
+        tagline="よくある質問"
       />
 
       <section className="py-16 lg:py-24">

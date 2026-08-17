@@ -13,10 +13,10 @@ const footerSections = [
   {
     title: "サービス",
     links: [
-      { label: "Smart Home", href: "/smart-home" },
-      { label: "Scenes", href: "/scenes" },
-      { label: "Technology", href: "/technology" },
-      { label: "Sustainability", href: "/sustainability" },
+      { label: "スマートホーム", href: "/smart-home" },
+      { label: "シーン", href: "/scenes" },
+      { label: "テクノロジー", href: "/technology" },
+      { label: "サステナビリティ", href: "/sustainability" },
     ],
   },
   {
@@ -62,7 +62,7 @@ export default function Footer() {
             <p className="text-warm-white/50 text-sm leading-relaxed max-w-xs">
               日本の暮らしに、静かなテクノロジーを。
               <br />
-              Quiet technology for Japanese living.
+              日本の暮らしのための静かなテクノロジー。
             </p>
           </div>
 

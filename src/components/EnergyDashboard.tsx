@@ -142,7 +142,7 @@ export default function EnergyDashboard() {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <p className="text-xs tracking-[0.3em] text-amber/70 uppercase mb-3">
-            Energy Dashboard
+            エネルギーダッシュボード
           </p>
           <h2 className="font-serif-jp text-3xl sm:text-4xl lg:text-5xl font-medium">
             エネルギーモニター
@@ -196,7 +196,7 @@ export default function EnergyDashboard() {
               <DonutChart value={92} color="#7a9e7e" />
             </div>
             <div className="text-lg sm:text-xl font-light text-muted-green mt-1">
-              Excellent
+              良好
             </div>
             <p className="text-[11px] text-warm-white/40 mt-1 tracking-wider">
               空気質

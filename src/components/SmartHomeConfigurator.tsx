@@ -12,20 +12,20 @@ const rooms = [
 ];
 
 const automationOptions = [
-  { id: "lighting", label: "Lighting", jp: "照明", icon: "💡" },
-  { id: "temperature", label: "Temperature", jp: "空調", icon: "🌡️" },
-  { id: "security", label: "Security", jp: "防犯", icon: "🔒" },
-  { id: "air-quality", label: "Air Quality", jp: "空気質", icon: "🌿" },
-  { id: "energy", label: "Energy", jp: "エネルギー", icon: "⚡" },
-  { id: "curtains", label: "Curtains", jp: "カーテン", icon: "🪟" },
+  { id: "lighting", label: "照明", jp: "照明", icon: "💡" },
+  { id: "temperature", label: "空調", jp: "空調", icon: "🌡️" },
+  { id: "security", label: "防犯", jp: "防犯", icon: "🔒" },
+  { id: "air-quality", label: "空気質", jp: "空気質", icon: "🌿" },
+  { id: "energy", label: "エネルギー", jp: "エネルギー", icon: "⚡" },
+  { id: "curtains", label: "カーテン", jp: "カーテン", icon: "🪟" },
 ];
 
 const lifestyles = [
-  { id: "morning", label: "Morning", jp: "朝", icon: "🌅" },
-  { id: "work", label: "Work", jp: "仕事", icon: "💻" },
-  { id: "relax", label: "Relax", jp: "くつろぎ", icon: "☕" },
-  { id: "sleep", label: "Sleep", jp: "就寝", icon: "🌙" },
-  { id: "away", label: "Away", jp: "外出", icon: "🏃" },
+  { id: "morning", label: "朝", jp: "朝", icon: "🌅" },
+  { id: "work", label: "仕事", jp: "仕事", icon: "💻" },
+  { id: "relax", label: "くつろぎ", jp: "くつろぎ", icon: "☕" },
+  { id: "sleep", label: "就寝", jp: "就寝", icon: "🌙" },
+  { id: "away", label: "外出", jp: "外出", icon: "🏃" },
 ];
 
 interface SceneRecommendation {
@@ -107,7 +107,7 @@ export default function SmartHomeConfigurator() {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <p className="text-xs tracking-[0.3em] text-amber uppercase mb-3">
-            My Smart Home
+            マイスマートホーム
           </p>
           <h2 className="font-serif-jp text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal">
             スマートホーム設計

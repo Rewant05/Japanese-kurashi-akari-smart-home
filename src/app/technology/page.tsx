@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const technologies = [
   {
     title: "エッジAI",
-    subtitle: "Edge AI Processing",
+    subtitle: "エッジAI処理",
     description:
       "すべてのAI処理をSora Hub上でローカルに実行。クラウドに頼らないことで、レスポンスの高速化とプライバシーの完全保護を同時に実現します。独自設計のNPU（Neural Processing Unit）が、住人の生活パターンを継続的に学習し、日々の快適さを向上させます。",
     details: [
@@ -24,7 +24,7 @@ const technologies = [
   },
   {
     title: "Matter / Thread",
-    subtitle: "Interoperability Protocol",
+    subtitle: "相互運用プロトコル",
     description:
       "業界標準のMatterプロトコルに完全対応。Apple HomeKit、Google Home、Amazon Alexaとシームレスに連携します。Threadメッシュネットワークにより、Wi-Fiルーターに依存しない安定した低消費電力接続を実現。",
     details: [
@@ -37,7 +37,7 @@ const technologies = [
   },
   {
     title: "センサーフュージョン",
-    subtitle: "Multi-Sensor Integration",
+    subtitle: "マルチセンサー統合",
     description:
       "温度、湿度、照度、音圧、PM2.5、CO2、VOC、人感、ドア開閉——多種多様なセンサーデータを統合的に分析し、住空間の状態を総合的に把握します。単一のセンサーでは見えない環境変化を、フュージョン技術で高精度に検出。",
     details: [
@@ -50,7 +50,7 @@ const technologies = [
   },
   {
     title: "プライバシーファースト",
-    subtitle: "Privacy by Design",
+    subtitle: "プライバシーバイデザイン",
     description:
       "暮らし灯は、設計段階からプライバシー保護を最優先に考えています。すべてのデータはローカルで処理され、外部サーバーへの送信は一切行いません。万が一のセキュリティインシデントでも、データが漏洩するリスクをゼロに。",
     details: [
@@ -69,7 +69,7 @@ export default function TechnologyPage() {
       <PageHeader
         title="テクノロジー"
         subtitle="日本品質の技術で、静かで確かなスマートホームを実現します。"
-        tagline="Technology"
+        tagline="テクノロジー"
       />
 
       <section className="py-16 lg:py-24">
@@ -144,7 +144,7 @@ export default function TechnologyPage() {
               {/* Sora Hub (center) */}
               <rect x="225" y="110" width="150" height="80" rx="8" fill="rgba(74,142,194,0.15)" stroke="rgba(74,142,194,0.4)" strokeWidth="1" />
               <text x="300" y="145" textAnchor="middle" fill="#4a8ec2" fontSize="12" fontFamily="sans-serif">Sora Hub</text>
-              <text x="300" y="165" textAnchor="middle" fill="rgba(245,240,232,0.4)" fontSize="9" fontFamily="sans-serif">Edge AI / Local Processing</text>
+              <text x="300" y="165" textAnchor="middle" fill="rgba(245,240,232,0.4)" fontSize="9" fontFamily="sans-serif">エッジAI / ローカル処理</text>
 
               {/* Devices */}
               {[
@@ -166,7 +166,7 @@ export default function TechnologyPage() {
               ))}
 
               {/* Thread mesh label */}
-              <text x="300" y="280" textAnchor="middle" fill="rgba(245,240,232,0.2)" fontSize="8" fontFamily="sans-serif" letterSpacing="2">THREAD MESH NETWORK</text>
+              <text x="300" y="280" textAnchor="middle" fill="rgba(245,240,232,0.2)" fontSize="8" fontFamily="sans-serif" letterSpacing="2">THREAD メッシュネットワーク</text>
             </svg>
           </div>
         </div>

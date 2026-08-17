@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/products", label: "Products" },
-  { href: "/smart-home", label: "Smart Home" },
-  { href: "/scenes", label: "Scenes" },
-  { href: "/technology", label: "Technology" },
-  { href: "/sustainability", label: "Sustainability" },
-  { href: "/support", label: "Support" },
+  { href: "/products", label: "製品" },
+  { href: "/smart-home", label: "スマートホーム" },
+  { href: "/scenes", label: "シーン" },
+  { href: "/technology", label: "テクノロジー" },
+  { href: "/sustainability", label: "サステナビリティ" },
+  { href: "/support", label: "サポート" },
 ];
 
 export default function Navbar() {
@@ -57,7 +57,7 @@ export default function Navbar() {
                 />
               </svg>
             </div>
-            <span className="text-lg font-medium tracking-wider font-serif-jp">
+            <span className={`text-lg font-medium tracking-wider font-serif-jp transition-colors duration-300 ${scrolled ? 'text-charcoal' : 'text-warm-white'}`}>
               暮らし灯
             </span>
           </Link>
@@ -68,7 +68,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-ink-light hover:text-charcoal transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-charcoal after:transition-all after:duration-300 hover:after:w-full"
+                className={`text-sm transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:transition-all after:duration-300 hover:after:w-full ${
+                  scrolled
+                    ? "text-ink-light hover:text-charcoal after:bg-charcoal"
+                    : "text-warm-white/80 hover:text-warm-white after:bg-warm-white"
+                }`}
               >
                 {link.label}
               </Link>
@@ -90,14 +94,14 @@ export default function Navbar() {
               aria-label="メニューを開く"
             >
               <span
-                className={`block w-5 h-[1.5px] bg-charcoal transition-all duration-300 ${
+                className={`block w-5 h-[1.5px] transition-all duration-300 ${
                   isOpen ? "rotate-45 translate-y-[3px]" : ""
-                }`}
+                } ${scrolled ? "bg-charcoal" : "bg-warm-white"}`}
               />
               <span
-                className={`block w-5 h-[1.5px] bg-charcoal transition-all duration-300 ${
+                className={`block w-5 h-[1.5px] transition-all duration-300 ${
                   isOpen ? "-rotate-45 -translate-y-[3px]" : ""
-                }`}
+                } ${scrolled ? "bg-charcoal" : "bg-warm-white"}`}
               />
             </button>
           </div>

@@ -79,7 +79,7 @@ export default function ProductSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] text-amber uppercase mb-3">
-            Products
+            製品
           </p>
           <h2 className="font-serif-jp text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal">
             製品ラインナップ
