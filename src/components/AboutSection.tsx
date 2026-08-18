@@ -1,4 +1,4 @@
-"use client";
+// Server Component — only renders ScrollReveal client boundaries
 
 import ScrollReveal from "./ScrollReveal";
 

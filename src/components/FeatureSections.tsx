@@ -1,4 +1,4 @@
-"use client";
+// Server Component — no client-side hooks or event handlers used directly
 
 import ScrollReveal from "./ScrollReveal";
 

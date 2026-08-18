@@ -1,5 +1,6 @@
-"use client";
+// Server Component — only renders ScrollReveal client boundaries
 
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 const products = [
@@ -95,9 +96,12 @@ export default function ProductSection() {
               <div className="group relative bg-white rounded-xl border border-warm-beige/50 overflow-hidden card-hover h-full">
                 {/* Product Visual */}
                 <div className="relative h-48 bg-gradient-to-br from-warm-cream to-warm-beige/30 flex items-center justify-center overflow-hidden">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.nameJp}
+                    width={400}
+                    height={300}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
                   />
                   {/* Accent glow on hover */}

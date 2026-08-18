@@ -21,21 +21,30 @@ function AnimatedCounter({
 
   useEffect(() => {
     if (!isVisible) return;
-    const start = 0;
-    const increment = target / (duration / 16);
-    let current = start;
 
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        setCount(target);
-        clearInterval(timer);
+    let rafId: number;
+    let startTime: number | null = null;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Ease-out cubic for smooth deceleration
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      const current = easedProgress * target;
+
+      setCount(current);
+
+      if (progress < 1) {
+        rafId = requestAnimationFrame(animate);
       } else {
-        setCount(current);
+        setCount(target);
       }
-    }, 16);
+    };
 
-    return () => clearInterval(timer);
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
   }, [isVisible, target, duration]);
 
   return (
