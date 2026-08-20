@@ -4,10 +4,10 @@ const footerSections = [
   {
     title: "製品",
     links: [
-      { label: "Akari Light", href: "/products" },
-      { label: "Kaze Sensor", href: "/products" },
-      { label: "Mamoru Lock", href: "/products" },
-      { label: "Sora Hub", href: "/products" },
+      { label: "灯ライト", href: "/products" },
+      { label: "風センサー", href: "/products" },
+      { label: "守ロック", href: "/products" },
+      { label: "空ハブ", href: "/products" },
     ],
   },
   {
@@ -94,11 +94,11 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-warm-white/30">
-            © 2026 暮らし灯 / Kurashi Akari. All rights reserved.
+            © 2026 暮らし灯。全著作権所有。
           </p>
           <div className="flex items-center gap-6">
-            <span className="text-xs text-warm-white/30">Tokyo, Japan</span>
-            <span className="text-xs text-warm-white/30">info@kurashi-akari.jp</span>
+            <span className="text-xs text-warm-white/30">東京都、日本</span>
+            <span className="text-xs text-warm-white/30">メール: info@kurashi-akari.jp</span>
           </div>
         </div>
       </div>

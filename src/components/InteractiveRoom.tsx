@@ -243,7 +243,7 @@ export default function InteractiveRoom({ room, automations, lifestyle }: RoomPr
         {hasTemperature && (
           <div className="flex items-center gap-1.5 glass-dark rounded-full px-2.5 py-1 text-[10px] text-warm-white/70">
             <span className="w-1.5 h-1.5 rounded-full bg-accent-blue" />
-            {tempValue}°C
+            {tempValue}度
           </div>
         )}
         {hasSecurity && (

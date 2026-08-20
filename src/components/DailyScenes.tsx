@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
+import Image from "next/image";
 
 const scenes = [
   {
     id: "morning",
     jp: "朝",
-    en: "Morning",
+    en: "朝",
     time: "6:00 - 9:00",
     description: "カーテンが静かに開き、自然光とともに照明が徐々に明るく。快適な温度で一日が始まります。",
     devices: ["照明: 暖色 → 白色", "カーテン: 全開", "温度: 22°C", "音楽: 穏やかなBGM"],
@@ -17,7 +18,7 @@ const scenes = [
   {
     id: "work",
     jp: "仕事",
-    en: "Work",
+    en: "仕事",
     time: "9:00 - 17:00",
     description: "集中力を高める白色照明、最適な温度と空気質。外部の音を最小限に抑え、生産性を最大化します。",
     devices: ["照明: 5000K 白色", "温度: 23°C", "空気質: 最適化", "通知: 最小限"],
@@ -27,7 +28,7 @@ const scenes = [
   {
     id: "arrival",
     jp: "帰宅",
-    en: "Arrival",
+    en: "帰宅",
     time: "17:00 - 19:00",
     description: "玄関のロックが解除され、廊下の照明が点灯。エアコンが事前に快適な温度に調整済みです。",
     devices: ["スマートロック: 解錠", "照明: 廊下点灯", "温度: 23°C", "セキュリティ: 在宅モード"],
@@ -37,7 +38,7 @@ const scenes = [
   {
     id: "relax",
     jp: "くつろぎ",
-    en: "Relax",
+    en: "くつろぎ",
     time: "19:00 - 22:00",
     description: "間接照明に切り替わり、暖かい色温度でリラックス空間を演出。映画モードでは照明が自動で調光されます。",
     devices: ["照明: 2700K 暖色", "カーテン: 半開", "温度: 24°C", "音楽: チル系BGM"],
@@ -47,7 +48,7 @@ const scenes = [
   {
     id: "sleep",
     jp: "就寝",
-    en: "Sleep",
+    en: "就寝",
     time: "22:00 - 6:00",
     description: "すべての照明が徐々に消灯。温度は睡眠に最適な20°Cに。全てのロックが施錠され、セキュリティが有効に。",
     devices: ["照明: 全消灯", "カーテン: 全閉", "温度: 20°C", "セキュリティ: 夜間モード"],
@@ -88,7 +89,7 @@ export default function DailyScenes() {
               }`}
             >
               <span className="text-lg sm:text-xl">{scene.jp}</span>
-              <span className="text-[10px] tracking-wider opacity-60">{scene.en}</span>
+              <span className="text-[10px] tracking-wider opacity-60">シーン</span>
             </button>
           ))}
         </div>
@@ -99,29 +100,31 @@ export default function DailyScenes() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
             {/* Scene visual */}
-            <div className="relative p-8 lg:p-12 flex items-center justify-center min-h-[250px]">
-              <div className="text-center">
+            <div className="relative p-0 flex items-center justify-center min-h-[250px] overflow-hidden">
+              <Image
+                src="/images/scene-visual.jpg"
+                alt={active.jp}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover mix-blend-overlay transition-opacity duration-500"
+                style={{ opacity: 0.8 }}
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10">
                 <div
-                  className="text-7xl sm:text-8xl font-serif-jp font-bold transition-colors duration-500"
-                  style={{ color: `${active.color}20` }}
+                  className="text-6xl sm:text-7xl font-serif-jp font-bold transition-colors duration-500 text-white drop-shadow-md"
                 >
                   {active.jp}
                 </div>
-                <div className="mt-2 text-sm text-ink-light/50 tracking-widest">
+                <div className="mt-2 text-sm text-white/90 tracking-widest drop-shadow-md">
                   {active.time}
                 </div>
               </div>
-              {/* Decorative ring */}
-              <div
-                className="absolute w-48 h-48 rounded-full border-2 opacity-10 transition-colors duration-500"
-                style={{ borderColor: active.color }}
-              />
             </div>
 
             {/* Scene details */}
             <div className="p-8 lg:p-12 bg-white/50">
               <h3 className="font-serif-jp text-xl sm:text-2xl font-medium text-charcoal mb-3">
-                {active.jp} / {active.en}
+                {active.jp}
               </h3>
               <p className="text-sm text-ink-light/70 leading-relaxed mb-6">
                 {active.description}

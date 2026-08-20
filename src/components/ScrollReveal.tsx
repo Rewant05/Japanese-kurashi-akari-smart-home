@@ -37,8 +37,10 @@ export default function ScrollReveal({
               animationTimingFunction: "ease-out",
               animationFillMode: "forwards",
               animationDelay: `${delay}s`,
+              willChange: "opacity, transform",
+              backfaceVisibility: "hidden",
             }
-          : { opacity: 0 }
+          : { opacity: 0, willChange: "opacity, transform" }
       }
     >
       {children}

@@ -48,7 +48,7 @@ export default function ScenesPage() {
       <PageHeader
         title="一日のシーン"
         subtitle="暮らしのあらゆる瞬間に、最適な環境を自動で。"
-        tagline="Scenes"
+        tagline="シーン"
       />
 
       <DailyScenes />

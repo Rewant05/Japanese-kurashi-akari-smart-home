@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageWrapper from "@/components/PageWrapper";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "テクノロジー | 暮らし灯 - Kurashi Akari",
@@ -79,15 +80,17 @@ export default function TechnologyPage() {
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
                 {/* Visual */}
                 <div className="lg:col-span-2">
-                  <div className="aspect-square max-w-[280px] rounded-2xl bg-gradient-to-br from-warm-cream to-warm-beige/30 border border-warm-beige/50 flex items-center justify-center shoji-pattern relative overflow-hidden">
+                  <div className="aspect-square max-w-[280px] rounded-2xl bg-gradient-to-br from-warm-cream to-warm-beige/30 border border-warm-beige/50 relative overflow-hidden">
+                    <Image
+                      src="/images/tech-visual.jpg"
+                      alt={tech.title}
+                      width={280}
+                      height={280}
+                      sizes="(max-width: 640px) 100vw, 280px"
+                      className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 hover:scale-105"
+                    />
                     <div
-                      className="text-6xl font-serif-jp font-bold"
-                      style={{ color: `${tech.accentColor}20` }}
-                    >
-                      {tech.title[0]}
-                    </div>
-                    <div
-                      className="absolute w-32 h-32 rounded-full border opacity-10"
+                      className="absolute inset-0 border-[4px] opacity-10 rounded-2xl pointer-events-none"
                       style={{ borderColor: tech.accentColor }}
                     />
                   </div>

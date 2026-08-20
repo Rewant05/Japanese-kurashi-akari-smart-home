@@ -64,7 +64,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] text-amber uppercase mb-3">
-            About
+            会社概要
           </p>
           <h2 className="font-serif-jp text-3xl sm:text-4xl lg:text-5xl font-medium text-charcoal leading-snug">
             日本の暮らしに、
@@ -87,9 +87,7 @@ export default function AboutSection() {
                   {value.icon}
                 </div>
                 <h3 className="font-medium text-charcoal mb-1">{value.title}</h3>
-                <p className="text-[11px] text-ink-light/40 tracking-wider mb-3">
-                  {value.en}
-                </p>
+
                 <p className="text-sm text-ink-light/60 leading-relaxed">
                   {value.description}
                 </p>

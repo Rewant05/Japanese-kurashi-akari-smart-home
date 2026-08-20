@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="absolute inset-0">
           <Image
             src="/images/hero-interior.png"
-            alt="Japanese Minimalist Smart Home"
+            alt="日本のミニマリスト・スマートホーム"
             fill
             priority
             fetchPriority="high"
@@ -95,7 +95,7 @@ export default function Hero() {
             href="/about"
             className="inline-flex items-center gap-2 text-warm-white/60 border border-warm-white/20 px-8 py-3.5 rounded text-sm hover:text-warm-white hover:border-warm-white/40 transition-all duration-300"
           >
-            Kurashi Akariについて
+            暮らし灯について
           </Link>
         </div>
       </div>

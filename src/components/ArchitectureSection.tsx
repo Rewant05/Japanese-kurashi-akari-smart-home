@@ -53,13 +53,13 @@ export default function ArchitectureSection() {
                   {/* Engawa */}
                   <div className="flex-1 flex flex-col gap-2">
                     <div className="h-8 bg-wood/10 rounded-sm flex items-center px-3">
-                      <span className="text-[10px] text-wood/60 tracking-wider">縁側 / Engawa</span>
+                      <span className="text-[10px] text-wood/60 tracking-wider">縁側</span>
                     </div>
                     <div className="h-8 bg-wood/5 rounded-sm flex items-center px-3">
-                      <span className="text-[10px] text-wood/60 tracking-wider">畳 / Tatami</span>
+                      <span className="text-[10px] text-wood/60 tracking-wider">畳</span>
                     </div>
                     <div className="h-8 bg-muted-green/10 rounded-sm flex items-center px-3">
-                      <span className="text-[10px] text-muted-green/60 tracking-wider">庭園 / Garden</span>
+                      <span className="text-[10px] text-muted-green/60 tracking-wider">庭園</span>
                     </div>
                   </div>
                 </div>

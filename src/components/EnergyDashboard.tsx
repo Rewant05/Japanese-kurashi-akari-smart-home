@@ -166,7 +166,7 @@ export default function EnergyDashboard() {
               <DonutChart value={48} color="#c4a35a" />
             </div>
             <div className="text-2xl sm:text-3xl font-light text-amber">
-              <AnimatedCounter target={4.8} suffix=" kWh" decimals={1} />
+              <AnimatedCounter target={4.8} suffix=" キロワット時" decimals={1} />
             </div>
             <p className="text-[11px] text-warm-white/40 mt-1 tracking-wider">
               本日の使用量
@@ -192,7 +192,7 @@ export default function EnergyDashboard() {
               <DonutChart value={22.4} max={35} color="#4a8ec2" />
             </div>
             <div className="text-2xl sm:text-3xl font-light text-accent-blue">
-              <AnimatedCounter target={22.4} suffix="°C" decimals={1} />
+              <AnimatedCounter target={22.4} suffix="度" decimals={1} />
             </div>
             <p className="text-[11px] text-warm-white/40 mt-1 tracking-wider">
               室温
@@ -219,7 +219,7 @@ export default function EnergyDashboard() {
             <h3 className="text-sm font-medium text-warm-white/70">
               時間別電力消費
             </h3>
-            <span className="text-[10px] text-warm-white/30">kWh</span>
+            <span className="text-[10px] text-warm-white/30">キロワット時</span>
           </div>
           <BarChart />
         </div>

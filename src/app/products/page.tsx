@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import ProductSection from "@/components/ProductSection";
 import ScrollReveal from "@/components/ScrollReveal";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "製品一覧 | 暮らし灯 - Kurashi Akari",
@@ -14,7 +15,7 @@ const productDetails = [
   {
     id: "akari-light",
     kanji: "灯",
-    name: "Akari Light",
+    name: "灯ライト",
     tagline: "光を、時間に合わせて。",
     longDescription:
       "Akari Lightは、人間のサーカディアンリズムに基づいて色温度と明るさを自動調整する次世代スマート照明です。朝は自然光に近い爽やかな白色光で目覚めを促し、夜は暖かみのある光でリラックスタイムをサポート。Matterプロトコル対応で、Sora Hubとの連携はもちろん、他社のスマートホームエコシステムとも互換性があります。",
@@ -32,7 +33,7 @@ const productDetails = [
   {
     id: "kaze-sensor",
     kanji: "風",
-    name: "Kaze Sensor",
+    name: "風センサー",
     tagline: "空気を、見える化する。",
     longDescription:
       "Kaze Sensorは、温度、湿度、PM2.5、CO2、VOCの5つの指標をリアルタイムで計測する高精度環境センサーです。コンパクトなデザインながら、医療グレードのセンサーを搭載。スマートフォンアプリで環境データの履歴を確認でき、エアコンや空気清浄機との連携で最適な室内環境を自動維持します。",
@@ -50,7 +51,7 @@ const productDetails = [
   {
     id: "mamoru-lock",
     kanji: "守",
-    name: "Mamoru Lock",
+    name: "守ロック",
     tagline: "見えない安心を、玄関に。",
     longDescription:
       "Mamoru Lockは、指紋認証、NFCカード、スマートフォン、暗証番号の4つの解錠方法に対応したスマートロックです。国内主要ドアメーカーに対応し、工事不要で取り付け可能。外出時は自動施錠、帰宅時はスマートフォンの接近を検知して自動解錠。家族全員の入退室ログも確認できます。",
@@ -68,7 +69,7 @@ const productDetails = [
   {
     id: "sora-hub",
     kanji: "空",
-    name: "Sora Hub",
+    name: "空ハブ",
     tagline: "すべてを、ひとつに。",
     longDescription:
       "Sora Hubは、暮らし灯の全デバイスを統合管理するセントラルハブです。エッジAIを搭載し、住人の生活パターンを学習して照明、空調、セキュリティを自動最適化。すべてのデータ処理はローカルで完結するため、プライバシーを完全に保護。Wi-Fi、Bluetooth、Thread、Matterに対応し、最大128台のデバイスを管理できます。",
@@ -91,7 +92,7 @@ export default function ProductsPage() {
       <PageHeader
         title="製品ラインナップ"
         subtitle="日本の暮らしのために設計された、静かで美しいスマートデバイス。"
-        tagline="Products"
+        tagline="製品"
       />
 
       {/* Product Overview */}
@@ -108,18 +109,15 @@ export default function ProductsPage() {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   {/* Visual */}
-                  <div className="bg-gradient-to-br from-warm-cream to-warm-beige/30 p-8 lg:p-12 flex items-center justify-center min-h-[260px]">
-                    <div className="text-center">
-                      <div
-                        className="text-8xl font-serif-jp font-bold"
-                        style={{ color: `${product.accentColor}25` }}
-                      >
-                        {product.kanji}
-                      </div>
-                      <p className="text-sm text-ink-light/40 mt-2 tracking-wider">
-                        {product.price}
-                      </p>
-                    </div>
+                  <div className="relative bg-gradient-to-br from-warm-cream to-warm-beige/30 p-8 lg:p-12 flex items-center justify-center min-h-[260px] overflow-hidden">
+                    <Image
+                      src={`/images/${product.id}.png`}
+                      alt={product.name}
+                      width={400}
+                      height={300}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 hover:scale-105"
+                    />
                   </div>
 
                   {/* Details */}

@@ -8,8 +8,8 @@ const products = [
     id: "akari-light",
     kanji: "灯",
     image: "/images/akari-light.png",
-    name: "AKARI LIGHT",
-    nameJp: "Akari Light",
+    name: "灯ライト",
+    nameJp: "アカリライト",
     description: "サーカディアンリズムに基づくアダプティブ照明。2700K〜6500Kの色温度を一日のリズムに合わせて自動調整します。",
     specs: [
       { label: "色温度", value: "2700K - 6500K" },
@@ -25,8 +25,8 @@ const products = [
     id: "kaze-sensor",
     kanji: "風",
     image: "/images/kaze-sensor.png",
-    name: "KAZE SENSOR",
-    nameJp: "Kaze Sensor",
+    name: "風センサー",
+    nameJp: "カゼセンサー",
     description: "温度、湿度、PM2.5、CO2、VOCを高精度でリアルタイム計測。快適な空間環境を数値で可視化します。",
     specs: [
       { label: "センサー", value: "温度/湿度/PM2.5/CO2/VOC" },
@@ -42,8 +42,8 @@ const products = [
     id: "mamoru-lock",
     kanji: "守",
     image: "/images/mamoru-lock.png",
-    name: "MAMORU LOCK",
-    nameJp: "Mamoru Lock",
+    name: "守ロック",
+    nameJp: "マモルロック",
     description: "指紋認証、NFCカード、スマートフォン、暗証番号の4WAYロック。自動施錠と遠隔操作で安全な暮らしを。",
     specs: [
       { label: "認証", value: "指紋/NFC/スマホ/暗証番号" },
@@ -59,8 +59,8 @@ const products = [
     id: "sora-hub",
     kanji: "空",
     image: "/images/sora-hub.png",
-    name: "SORA HUB",
-    nameJp: "Sora Hub",
+    name: "空ハブ",
+    nameJp: "ソラハブ",
     description: "すべての暮らし灯デバイスを統合管理するセントラルハブ。AIが生活パターンを学習し、自動で最適化します。",
     specs: [
       { label: "プロトコル", value: "Wi-Fi/Bluetooth/Thread/Matter" },

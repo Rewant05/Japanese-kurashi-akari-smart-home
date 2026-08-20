@@ -148,14 +148,14 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="text-sm text-ink-light hover:text-charcoal transition-colors"
               >
-                About
+                会社概要
               </Link>
               <Link
                 href="/faq"
                 onClick={() => setIsOpen(false)}
                 className="text-sm text-ink-light hover:text-charcoal transition-colors"
               >
-                FAQ
+                よくある質問
               </Link>
             </div>
 
