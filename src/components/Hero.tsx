@@ -24,6 +24,7 @@ export default function Hero() {
             alt="日本のミニマリスト・スマートホーム"
             fill
             priority
+            loading="eager"
             fetchPriority="high"
             sizes="100vw"
             className="object-cover opacity-60"
