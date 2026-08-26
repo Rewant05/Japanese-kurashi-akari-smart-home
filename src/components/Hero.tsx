@@ -56,32 +56,24 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <h1
-          className={`font-serif-jp text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-warm-white leading-tight tracking-wide transition-all duration-1000 ${
-            loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className="font-serif-jp text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-warm-white leading-tight tracking-wide opacity-0 animate-fade-in-up"
         >
           暮らしを、もっと静かに。
         </h1>
         <p
-          className={`mt-4 text-lg sm:text-xl text-warm-white/60 font-light tracking-widest transition-all duration-1000 delay-200 ${
-            loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
+          className="mt-4 text-lg sm:text-xl text-warm-white/60 font-light tracking-widest opacity-0 animate-fade-in-up stagger-2"
         >
           静かな暮らしのためのテクノロジー。
         </p>
         <p
-          className={`mt-8 max-w-2xl mx-auto text-sm sm:text-base text-warm-white/40 leading-relaxed transition-all duration-1000 delay-500 ${
-            loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
+          className="mt-8 max-w-2xl mx-auto text-sm sm:text-base text-warm-white/40 leading-relaxed opacity-0 animate-fade-in-up stagger-5"
         >
           暮らし灯は、照明・空調・セキュリティ・エネルギー・日々の暮らしのルーティンを
           ひとつのインテリジェントな住まいに統合します。
         </p>
 
         <div
-          className={`mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-1000 delay-700 ${
-            loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
+          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up stagger-6"
         >
           <Link
             href="/smart-home"

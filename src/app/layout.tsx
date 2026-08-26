@@ -7,7 +7,7 @@ const notoSansJP = Noto_Sans_JP({
   weight: ["300", "400", "500"],
   display: "swap",
   variable: "--font-sans",
-  preload: false,
+  preload: true,
 });
 
 const notoSerifJP = Noto_Serif_JP({
@@ -15,7 +15,7 @@ const notoSerifJP = Noto_Serif_JP({
   weight: ["400", "500", "700"],
   display: "swap",
   variable: "--font-serif",
-  preload: false,
+  preload: true,
 });
 
 export const viewport: Viewport = {
