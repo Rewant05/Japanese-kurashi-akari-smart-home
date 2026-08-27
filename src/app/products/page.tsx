@@ -101,7 +101,7 @@ export default function ProductsPage() {
       {/* Detailed product sections */}
       <section className="py-16 lg:py-24 bg-warm-cream">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          {productDetails.map((product, i) => (
+          {productDetails.map((product) => (
             <ScrollReveal key={product.id} delay={0.1}>
               <div
                 id={product.id}
